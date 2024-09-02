@@ -15,9 +15,14 @@ def age():
     num = int(input("Enter your age:"))
     return num
 
+#Calculates when someone was born and how old they are 
+def whatyear():
+    current_year = 2024
+    birth_year = current_year - age()
+    return birth_year
 
 def WusYaName():
-    return print(f"Your name is {name()} and you are {age()} years old")
+    return print(f"Your name is {name()}, you were born in {whatyear()} and you are {age()} years old")
     
 
 
